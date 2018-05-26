@@ -1,0 +1,11 @@
+* { box-sizing: border-box; }
+
+body { margin: 0; padding: 0; }
+
+.container { -ms-flex-align: center; align-items: center; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; height: 100vh; -ms-flex-pack: center; justify-content: center; }
+
+.container .controls { font-size: 48px; }
+
+.container .controls a { background: black; border-radius: 10px; color: white; padding: 10px 50px; text-decoration: none; }
+
+.container .stopwatch { background: red; border-radius: 10px; font-size: 96px; margin: 20px auto; padding: 20px; }
