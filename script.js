@@ -82,18 +82,18 @@ class Stopwatch extends React.Component {
 		this.print()
 	}
 
-	render = () => {
+	render=()=>{
 		return (
-			<div className="container">
-		      	<nav className="controls">
-		        	<a href="#" className="button" id="start" onClic={this.start}>Start</a>
-		        	<a href="#" className="button" id="stop" onClick={this.stop}>Stop</a>
-		        	<a href="#" className="button" id="reset" onClic={this.reset}>Reset</a>
+			<div className={'container'}>
+		      	<nav className={'controls'}>
+		        	<a href={'#'} className={'button'} id={'start'} onClick={this.start}>Start</a>
+		        	<a href={'#'} className={'button'} id={'stop'} onClick={this.stop}>Stop</a>
+		        	<a href={'#'} className={'button'} id={'reset'} onClick={this.reset}>Reset</a>
 		      	</nav>
-		      	<div className="stopwatch">{this.format(this.state.times)}</div>
-		      	<ul className="results"></ul>
+		      	<div className={'stopwatch'}>{this.format(this.state.times)}</div>
+		      	<ul className={'results'}></ul>
 		    </div>
-		)
+		 )
 	}
 }
 
