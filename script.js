@@ -34,6 +34,7 @@ class Stopwatch extends React.Component {
 		if(!this.state.running){
 			this.state.running = 'true';
 			this.watch = setInterval(() => this.step(), 10)
+		}
 	}
 
 	step() {
@@ -76,6 +77,7 @@ class Stopwatch extends React.Component {
 		this.setState({
 			running: false
 		})
+	}
 
 	resetCounter() {
 		this.stop()
@@ -83,9 +85,9 @@ class Stopwatch extends React.Component {
 		this.print()
 	}
 
-	render() {
+	render(){
 		return (
-			<div className={'container'}>
+			<div className = {'container'}>
 		      	<nav className={'controls'}>
 		        	<a href={'#'} className={'button'} id={'start'} onClick={this.start}>Start</a>
 		        	<a href={'#'} className={'button'} id={'stop'} onClick={this.stop}>Stop</a>
@@ -94,7 +96,7 @@ class Stopwatch extends React.Component {
 		      	<div className={'stopwatch'}>{this.format(this.state.times)}</div>
 		      	<ul className={'results'}></ul>
 		    </div>
-		 )
+		)
 	}
 }
 
